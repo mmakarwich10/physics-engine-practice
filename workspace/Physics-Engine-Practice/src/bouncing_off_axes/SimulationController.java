@@ -7,7 +7,7 @@ import java.awt.HeadlessException;
 import javax.swing.JFrame;
 
 /**
- * Creates an instance of <code>ViewFrame</code>. Serves and the container for <code>ViewPanel</code>.
+ * Creates an instance of <code>ViewFrame</code>. Serves as the controller for the whole program and the container for <code>ViewPanel</code>.
  * 
  * @author Mason Makarwich
  *
@@ -34,6 +34,10 @@ public class SimulationController extends JFrame {
 		this.setVisible(true);
 		this.setSize(500, 400);
 	}
+	
+	/**
+	 * Draws whatever is specified in the <code>draw(Graphics g)</code> method of the <code>ViewPanel</code>.
+	 */
 	
 	public void paint(Graphics g) {
 		
