@@ -17,7 +17,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		SimulationController view = new SimulationController("Test");
+		SimulationController view = new SimulationController();
 	}
 
 }
