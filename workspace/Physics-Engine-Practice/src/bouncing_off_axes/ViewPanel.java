@@ -14,6 +14,9 @@ import javax.swing.JPanel;
 
 public class ViewPanel extends JPanel {
 
+	// Class objects
+	protected Ball b = new Ball();
+	
 	/**
 	 * Constructor for instances of <code>ViewPanel</code>.
 	 */
@@ -28,7 +31,7 @@ public class ViewPanel extends JPanel {
 	 * @param g
 	 */
 	
-	public void draw(Graphics g) {
+	public void paint(Graphics g) {
 		
 		g.drawRect(50, 50, 50, 50);
 	}

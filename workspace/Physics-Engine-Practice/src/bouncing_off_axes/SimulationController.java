@@ -34,14 +34,5 @@ public class SimulationController extends JFrame {
 		this.setVisible(true);
 		this.setSize(500, 400);
 	}
-	
-	/**
-	 * Draws whatever is specified in the <code>draw(Graphics g)</code> method of the <code>ViewPanel</code>.
-	 */
-	
-	public void paint(Graphics g) {
-		
-		view.draw(g);
-	}
 
 }
