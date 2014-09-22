@@ -1,43 +1,26 @@
 package bouncing_off_axes;
 
 import java.awt.Graphics;
-import java.awt.GraphicsConfiguration;
-import java.awt.HeadlessException;
-
-import javax.swing.JFrame;
 
 /**
- * Creates an instance of <code>ViewFrame</code>. Serves and the container for <code>ViewPanel</code>.
+ * Creates an instance of <code>SimulationController</code>. Controls both the <code>ViewFrame</code> and the <code>Ball</code> objects, as well as the <code>Timer</code> object associated with
+ * both.
  * 
  * @author Mason Makarwich
  *
  */
 
-@SuppressWarnings("serial")
-public class SimulationController extends JFrame {
+public class SimulationController {
 
-	// Class objects
-	protected ViewPanel view;
+	// Class Objects
+	ViewFrame view;
 	
 	/**
-	 * Constructor for instances of <code>ViewFrame</code>. Initializes the <code>ViewPanel</code>.
-	 * 
-	 * @param title
-	 * @throws HeadlessException
+	 * Constructor for instances of <code>SimulationController</code>. Initializes <code>ViewFrame</code>.
 	 */
 	
-	public SimulationController(String title) throws HeadlessException {
-		super(title);
+	public SimulationController() {
 		
-		view = new ViewPanel();
-		this.add(view);
-		this.setVisible(true);
-		this.setSize(500, 400);
+		view = new ViewFrame("Test");
 	}
-	
-	public void paint(Graphics g) {
-		
-		view.draw(g);
-	}
-
 }
