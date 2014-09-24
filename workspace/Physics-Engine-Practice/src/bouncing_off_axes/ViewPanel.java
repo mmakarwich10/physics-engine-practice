@@ -15,14 +15,15 @@ import javax.swing.JPanel;
 public class ViewPanel extends JPanel {
 
 	// Class objects
-	protected Ball b = new Ball();
+	protected Ball b;
 	
 	/**
-	 * Constructor for instances of <code>ViewPanel</code>.
+	 * Constructor for instances of <code>ViewPanel</code>. Initializes the ball handle.
 	 */
 	
 	public ViewPanel() {
-		// TODO Auto-generated constructor stub
+		
+		b = new Ball();
 	}
 	
 	/**
@@ -33,6 +34,6 @@ public class ViewPanel extends JPanel {
 	
 	public void paint(Graphics g) {
 		
-		g.drawRect(50, 50, 50, 50);
+		b.draw(g);
 	}
 }

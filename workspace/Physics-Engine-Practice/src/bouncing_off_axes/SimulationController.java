@@ -33,6 +33,7 @@ public class SimulationController extends JFrame {
 		this.add(view);
 		this.setVisible(true);
 		this.setSize(500, 400);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 
 }
