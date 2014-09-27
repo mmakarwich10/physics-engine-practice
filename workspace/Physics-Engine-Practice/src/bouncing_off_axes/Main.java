@@ -15,9 +15,11 @@ public class Main {
 	 * @param args
 	 */
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		
+		System.setProperty("com.apple.mrj.application.apple.menu.about.name", "Physics Engine Practice - Bouncing Balls");
 		SimulationController view = new SimulationController("Test");
+		
 	}
 
 }
