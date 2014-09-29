@@ -34,6 +34,7 @@ public class ViewPanel extends JPanel {
 	
 	public void paint(Graphics g) {
 		
+		b.move();
 		b.draw(g);
 	}
 }

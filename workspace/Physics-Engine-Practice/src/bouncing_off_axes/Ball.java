@@ -28,8 +28,8 @@ public class Ball {
 		
 		posX = 50;
 		posY = 50;
-		velX = 1;
-		velY = 1;
+		velX = 3;
+		velY = 3;
 		width = 10;
 		height = 10;
 	}
