@@ -15,7 +15,7 @@ public class Main {
 	 * @param args
 	 */
 	
-	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public static void main(String[] args) {
 		
 		SimulationController view = new SimulationController("Test");
 	}
