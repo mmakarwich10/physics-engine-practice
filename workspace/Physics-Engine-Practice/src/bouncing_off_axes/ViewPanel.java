@@ -27,7 +27,7 @@ public class ViewPanel extends JPanel {
 	}
 	
 	/**
-	 * Drawing method. Draws a rectangle.
+	 * Drawing method. Moves the ball and then draws it.
 	 * 
 	 * @param g
 	 */

@@ -44,13 +44,28 @@ public class SimulationController extends JFrame {
 		t.start();
 	}
 	
+	/**
+	 * Overrides the JFrame's inherent <code>paint()</code> method. Tells the <code>ViewPanel</code> to repaint.
+	 */
+	
 	public void paint(Graphics g) {
 		
 		view.repaint();
 	}
 	
+	/**
+	 * Creates an instance of a <code>TimerListener</code>. Serves as the action listener for the Timer in <code>SimulationController</code>.
+	 * 
+	 * @author Mason Makarwich
+	 *
+	 */
+	
 	private class TimerListener implements ActionListener {
 
+		/**
+		 * Performs a JFrame repaint call every time the <code>Timer</code> goes off.
+		 */
+		
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			
