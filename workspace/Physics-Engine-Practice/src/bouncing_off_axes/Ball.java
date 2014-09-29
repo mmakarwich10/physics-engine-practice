@@ -20,18 +20,23 @@ public class Ball {
 	protected int width;
 	protected int height;
 	
+	// Class Objects
+	protected ViewPanel view;
+	
 	/**
-	 * Constructor for instances of <code>Ball</code>. Initializes all of the class variables.
+	 * Constructor for instances of <code>Ball</code>. Initializes all of the class variables and objects.
 	 */
 	
-	public Ball() {
+	public Ball(int x, int y, int hor, int vert, ViewPanel v) {
 		
-		posX = 50;
-		posY = 50;
-		velX = 3;
-		velY = 3;
+		posX = x;
+		posY = y;
+		velX = hor;
+		velY = vert;
 		width = 10;
 		height = 10;
+		
+		view = v;
 	}
 	
 	/**
@@ -51,6 +56,14 @@ public class Ball {
 	 */
 	
 	public void move() {
+		
+		if ((posX <= 0 && velX < 0 ) || (posX >= view.getWidth()-width && velX > 0)) {
+			
+			velX = -velX;
+		} else if ((posY <= 0 && velY < 0) || (posY >= view.getHeight()-height && velY > 0)) {
+			
+			velY = -velY;
+		}
 		
 		posX += velX;
 		posY += velY;

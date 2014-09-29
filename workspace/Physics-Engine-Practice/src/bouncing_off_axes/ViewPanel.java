@@ -23,7 +23,7 @@ public class ViewPanel extends JPanel {
 	
 	public ViewPanel() {
 		
-		b = new Ball();
+		b = new Ball(50, 50, 3, 3, this);
 	}
 	
 	/**
